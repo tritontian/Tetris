@@ -1,2 +1,2 @@
 # Tetris
-This is Java based Tetris game course project
+This is a Java based Tetris game course project
