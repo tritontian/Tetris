@@ -11,7 +11,7 @@ import java.util.Random;
 /**
  * Enumeration of Rotation types.
  * 
- * @author Alan Fowler
+ * @author tian1212
  * @version 1.2
  */
 public enum Rotation {
