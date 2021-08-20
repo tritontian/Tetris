@@ -29,15 +29,15 @@ public class MyKeyListener extends KeyAdapter {
      */
     Timer myTimer;
     
-//    /**
-//     * the audio player.
-//     */
-//    AudioPlayer MGP;
-//    
-//    /**
-//     * the bgm.
-//     */
-//    AudioStream BGM;
+   /**
+    * the audio player.
+    */
+   AudioPlayer MGP;
+   
+   /**
+    * the bgm.
+    */
+   AudioStream BGM;
     
     
 
@@ -97,9 +97,9 @@ public class MyKeyListener extends KeyAdapter {
                 myTimer.restart();
                 break;
                 
-//            case KeyEvent.VK_M:
-//                setMusic();
-//                break;  
+           case KeyEvent.VK_M:
+               setMusic();
+               break;  
                 
                 
             case KeyEvent.VK_N:
@@ -129,28 +129,28 @@ public class MyKeyListener extends KeyAdapter {
     }
     
     
-//    /**
-//     * call set music.
-//     */
-//    public void setMusic() {
-//        music();
-//        MGP.start(BGM);
-//    }
-//    
-//    /**
-//     *get the music. 
-//     */
-//    public void music()  {
-//        MGP = AudioPlayer.player;
-//      
-//        try {
-//            BGM = new AudioStream(new FileInputStream(new File("./support_files/ojbk.wav")));
-//        } catch (final FileNotFoundException e) {
-//            e.printStackTrace();
-//        } catch (final IOException e) {
-//            e.printStackTrace();
-//        }
-//               
-//    }
+   /**
+    * call set music.
+    */
+   public void setMusic() {
+       music();
+       MGP.start(BGM);
+   }
+   
+   /**
+    *get the music. 
+    */
+   public void music()  {
+       MGP = AudioPlayer.player;
+     
+       try {
+           BGM = new AudioStream(new FileInputStream(new File("./support_files/ojbk.wav")));
+       } catch (final FileNotFoundException e) {
+           e.printStackTrace();
+       } catch (final IOException e) {
+           e.printStackTrace();
+       }
+              
+   }
 
 }
